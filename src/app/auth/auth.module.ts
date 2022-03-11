@@ -7,17 +7,21 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { HeaderAuthComponent } from './components/header-auth/header-auth.component';
 
+import { FormsModule } from '@angular/forms';
+import { CrudComponent } from './pages/crud/crud.component';
 
 @NgModule({
   declarations: [
     BaseLoginComponent,
     LoginComponent,
     RegisterComponent,
-    HeaderAuthComponent
+    HeaderAuthComponent,
+    CrudComponent
   ],
   imports: [
     CommonModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    FormsModule
   ]
 })
 export class AuthModule { }
